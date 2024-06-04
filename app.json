@@ -1,12 +1,39 @@
 {
-    "name": "Heroku docker #RixEtte",
-    "description": "Deploy docker to Heroku.",
-    "keywords":[
-        "Docker",
-        "noVNC"
-    ],
-    "env": {},
-    "website": "",
-    "repository": "https://github.com/meowdharchod/windows.git",
-    "stack": "container"
+  "name": "YourAppName",
+  "description": "Your App Description",
+  "repository": "https://github.com/meowdharchod/windows.git",
+  "stack": "container",
+  "build": {
+    "docker": {
+      "web": {
+        "dockerfile": "Dockerfile"
+      }
+    }
+  },
+  "env": {
+    "RAM_SIZE": {
+      "description": "Size of RAM",
+      "value": "4G"
+    },
+    "CPU_CORES": {
+      "description": "Number of CPU cores",
+      "value": "2"
+    },
+    "DISK_SIZE": {
+      "description": "Size of Disk",
+      "value": "64G"
+    },
+    "VERSION": {
+      "description": "Version of the app",
+      "value": "win11"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "buildpacks": []
 }
