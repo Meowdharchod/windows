@@ -1,0 +1,12 @@
+{
+    "name": "Heroku docker #RixEtte",
+    "description": "Deploy docker to Heroku.",
+    "keywords":[
+        "Docker",
+        "noVNC"
+    ],
+    "env": {},
+    "website": "",
+    "repository": "https://github.com/meowdharchod/windows.git",
+    "stack": "container"
+}
