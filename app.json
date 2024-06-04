@@ -1,31 +1,32 @@
 {
-  "name": "YourAppName",
+  "name": "windows",
   "description": "Your App Description",
-  "repository": "https://github.com/meowdharchod/windows.git",
+  "repository": "https://github.com/Meowdharchod/windows.git",
   "stack": "container",
-  "build": {
-    "docker": {
-      "web": {
-        "dockerfile": "Dockerfile"
-      }
-    }
-  },
   "env": {
     "RAM_SIZE": {
       "description": "Size of RAM",
-      "value": "4G"
+      "value": "4G",
+      "required": true
     },
     "CPU_CORES": {
       "description": "Number of CPU cores",
-      "value": "2"
+      "value": "2",
+      "required": true
     },
     "DISK_SIZE": {
       "description": "Size of Disk",
-      "value": "64G"
+      "value": "64G",
+      "required": true
     },
     "VERSION": {
       "description": "Version of the app",
-      "value": "win11"
+      "value": "win11",
+      "required": true
+    },
+    "PORT": {
+      "description": "Port for the application",
+      "required": true
     }
   },
   "formation": {
